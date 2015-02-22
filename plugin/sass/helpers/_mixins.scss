@@ -1,0 +1,9 @@
+// ----------------------------------
+//  Calculate Font Size
+// ----------------------------------
+
+@mixin font-size($size) {
+  $size: if(unitless($size), $size / 1px, $size);
+  font-size: $size;
+  font-size: ($size / $base-font-size) * 1em;
+}

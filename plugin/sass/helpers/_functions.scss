@@ -1,0 +1,16 @@
+// ----------------------------------
+//  Calculate Letter Spacing
+// ----------------------------------
+
+@function letterspace ($number) {
+  @return 0em + ($number / 1000);
+}
+
+// ----------------------------------
+//  Calculate Image URL
+// ----------------------------------
+
+@function image-url($file) {
+  $background: "url(../" + $image-path + $file + ")";
+  @return #{$background};
+}

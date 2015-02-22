@@ -1,2 +1,2 @@
-styleguidejs
+#styleguide.js
 ============
