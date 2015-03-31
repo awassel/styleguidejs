@@ -43,15 +43,16 @@ module.exports = function(grunt) {
       },
       release: {
         options: {
-          beautify: true,
-          compress: false,
-          mangle: false,
+          compress: true,
           sourceMap: true
         },
         files: {
           'build/release/js/main.libs.js': [
             'build/release/js/libs/jquery-1.11.0.min.js',
             'build/release/js/libs/modernizr-2.8.1.min.js'
+          ],
+          'build/release/js/plugins/jquery.styleguide.js': [
+            'build/release/js/plugins/jquery.styleguide.js'
           ]
         }
       }
